@@ -1,0 +1,37 @@
+nav {
+    background-color: #000;
+    height: 100px;
+    padding: 25px;
+    
+}
+a {
+    font-size: 20px;
+    text-align: center;
+}
+ul{
+    font-family: 'Varela Round', sans-serif;
+    font: bold;
+    color: #ffff;
+}
+/* li{
+    font-family: 'Varela Round', sans-serif;
+    font: bold;
+    color: pink;
+} */
+/* .navbar-nav {
+    font-family: 'Varela Round', sans-serif;
+    font: bold;
+    color: #ffff;
+} */
+img {
+    
+    
+    padding-right: 30px;
+    height: 60px;
+}
+.navbar-brand {
+    color: #1BB4E8;
+    font-size: 40px;
+    font-family: 'Acme', sans-serif;
+
+}

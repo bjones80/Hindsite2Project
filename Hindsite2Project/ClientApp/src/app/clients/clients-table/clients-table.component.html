@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="col-md-12">
+    <!-- <h2>{{ GpsInfoes?.location }}</h2> -->
+    <h2>Change Jonah Energy</h2>
+    <div class="col-md-5 LocationSearch">
+      <h4>Location Search:
+        <input type="text" #searchBox (keyup)="onKeyPress(searchBox.value)" class="form-Control"
+          placeholder="Enter a search value"> </h4>
+    </div>
+    <div class="col-md-5 DateSearch">
+      <h4>Date Search:
+        <input type="text" #searchBox (keyup)="onKeyPress(searchBox.value)" class="form-Control"
+          placeholder="Enter a search value"> </h4>
+    </div>
+    <div class="tableStuff">
+      <table>
+        <tr>
+          <th>Location</th>
+          <th>Company</th>
+          <th>Date</th>
+          <th>GPS Files</th>
+          <th>EDIT</th>
+        </tr>
+        <tr>
+          <td>SHB 101</td>
+          <td>Jonah Energy</td>
+          <td>7/7/19</td>
+          <td>File path or actual file</td>
+          <td>Update - Delete</td>
+        </tr>
+        <tr>
+          <td>SHB 102</td>
+          <td>Jonah Energy</td>
+          <td>7/5/19</td>
+          <td>File path or actual file</td>
+          <td>Update - Delete</td>
+        </tr>
+        <tr>
+          <td>SHB 103</td>
+          <td>Jonah Energy</td>
+          <td>7/9/19</td>
+          <td>File path or actual file</td>
+          <td>Update - Delete</td>
+        </tr>
+      </table>
+    </div>
+    <div class="add">
+      <button class="btn" routerLink='add'>Add</button>
+    </div>
+  </div>
+</div>

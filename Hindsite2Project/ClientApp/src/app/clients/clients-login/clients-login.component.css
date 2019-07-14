@@ -1,0 +1,20 @@
+.login{
+    padding: 5%;
+    font-family: 'Spectral', serif;
+}
+/* .username{
+    font-size: 20px;
+}
+.password{
+    font-size: 20px;
+} */
+label{
+    font-family: 'Spectral', serif;
+    font-size: 25px;
+    padding: .5%;
+}
+.signInBtn{
+    font-family: 'Spectral', serif;
+    padding-left: 230px;
+    font-size: 25px;
+}

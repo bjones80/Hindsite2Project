@@ -1,0 +1,41 @@
+/* div{
+    background-color: #ffffff;
+} */
+form{
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+}
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Spectral', serif;
+    font-size: 14px;
+}
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Spectral', serif;
+    font-size: 14px;
+}
+.send{
+    padding-bottom: 10px;
+}
+.btn{
+    font-family: 'Spectral', serif;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 20px;
+}
+

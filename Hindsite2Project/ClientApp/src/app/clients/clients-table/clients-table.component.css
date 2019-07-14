@@ -1,0 +1,44 @@
+h2{
+  text-align: center;
+}
+
+.h4{
+  font-size: 15px;
+  font-family: 'Spectral', serif;
+}
+
+.add{
+  font-family: 'Spectral', serif;
+  font-size: 15px;
+}
+
+.tableStuff {
+  text-align: center;
+  padding-left: 30px;
+}
+
+table {
+  text-align: center;
+  /* padding-left: 100%; */
+  font-family: 'Spectral', serif;
+  border-collapse: collapse;
+  /* width: 100%; */
+  width: 90%;
+  /* padding-left: 30px; */
+  /* display: inline-block; */
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-family: 'Spectral', serif;
+}
+  
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.add{
+  padding: 3%;
+}

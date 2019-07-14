@@ -1,0 +1,13 @@
+h4{
+    padding-left: 30px;
+    /* text-align: center; */
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-size: 30px;
+}
+p{
+    padding-top: 30px;
+    padding-left: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}

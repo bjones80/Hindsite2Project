@@ -1,0 +1,19 @@
+p{
+    font-family: 'Spectral', serif;
+    color: #000000;
+    font-size: 25px;
+    padding-left: 20px;
+}
+label{
+    font-family: 'Spectral', serif;
+    font-size: 25px;
+    padding: 2%;
+}
+.signInBtn{
+    font-family: 'Spectral', serif;
+    padding-left: 230px;
+    font-size: 25px;
+}
+.imagesY{
+    padding-bottom: 20px;
+}

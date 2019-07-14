@@ -1,0 +1,36 @@
+.GPS{
+    padding-top: 20px;
+    padding-left: 100px;
+}
+.banner{
+    background-color: #C6B07F;
+    width: 470px;
+    position: absolute;
+    bottom: 0px;
+}
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    padding-left: 10px;
+    font-size: 30px;
+    color: #ffffff;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    padding-left: 10px;
+    color: #000000;
+}
+.YEP{
+    padding-top: 20px;
+    padding-left: 100px;
+}
+.rec{
+    padding-top: 20px;
+    padding-left: 100px;
+    /* padding-bottom: 20px; */
+}
+.weed{
+    padding-top: 20px;
+    padding-left: 100px;
+    /* padding-bottom: 20px; */
+}
