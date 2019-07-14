@@ -1,6 +1,15 @@
-<body>
-  <app-nav-menu></app-nav-menu>
-  <div class="container">
-    <router-outlet></router-outlet>
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+      <!-- <app-home *ngIf="loadedFeature === 'home'"></app-home>
+      <app-about *ngIf="loadedFeature === 'about'"></app-about>
+      <app-services *ngIf="loadedFeature === 'services'"></app-services>
+      <app-clients *ngIf="loadedFeature === 'clients'"></app-clients>
+      <app-yep *ngIf="loadedFeature === 'yep'"></app-yep>
+      <app-contact *ngIf="loadedFeature === 'contact'"></app-contact> -->
+    </div>
   </div>
-</body>
+</div>
+<app-footer></app-footer>
