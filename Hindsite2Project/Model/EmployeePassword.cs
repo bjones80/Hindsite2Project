@@ -9,8 +9,10 @@ namespace Hindsite2Project.Model
     {
         public int Id { get; set; }
         public int EmployeeId { get; set; }
-        public Employee Employee { get; set; }
         public string EmployeeUserName { get; set; }
         public string EmployeePasswords { get; set; }
+
+        /* navigation properties */
+        public Employee Employee { get; set; }
     }
 }

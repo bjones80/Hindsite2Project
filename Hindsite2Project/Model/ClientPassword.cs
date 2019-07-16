@@ -9,8 +9,10 @@ namespace Hindsite2Project.Model
     {
         public int Id { get; set; }
         public int ClientId { get; set; }
-        public Client Client { get; set; }
         public string ClientUserName { get; set; }
         public string ClientPasswords { get; set; }
+
+        /* navigation properties */
+        public Client Client { get; set; }
     }
 }
