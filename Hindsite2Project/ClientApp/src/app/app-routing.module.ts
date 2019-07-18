@@ -6,7 +6,6 @@ import { ClientsComponent } from './clients/clients.component';
 import { YepComponent } from './yep/yep.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
-import { HomeGalleryComponent } from './home/home-gallery/home-gallery.component';
 import { AboutBossComponent } from './about/about-boss/about-boss.component';
 import { AboutHindsiteComponent } from './about/about-hindsite/about-hindsite.component';
 import { AboutTimeLineComponent } from './about/about-time-line/about-time-line.component';
@@ -14,6 +13,7 @@ import { AboutBossGalleryComponent } from './about/about-boss-gallery/about-boss
 import { ReclamationComponent } from './services/reclamation/reclamation.component';
 import { WeedControlComponent } from './services/weed-control/weed-control.component';
 import { MonitoringComponent } from './services/monitoring/monitoring.component';
+import { GpsEditComponent } from './gps/gps-edit/gps-edit.component';
 
 const appRoutes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -30,7 +30,10 @@ const appRoutes: Routes = [
         {path: 'weedControl', component: WeedControlComponent},
         {path: 'monitoring', component: MonitoringComponent}
     ]}, 
-    { path: 'clients', component: ClientsComponent},
+  {path: 'clients', component: ClientsComponent, children: [
+      { path: 'new', component: GpsEditComponent },
+      { path: ':id/edit', component: GpsEditComponent}
+    ]},
     { path: 'yep', component: YepComponent},
     { path: 'contact', component: ContactComponent}
 

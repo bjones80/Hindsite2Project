@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var ClientPassword = /** @class */ (function () {
-    function ClientPassword(id, clientId, employeeId, gpsFile, locations, date) {
+var GpsInfo = /** @class */ (function () {
+    function GpsInfo(id, clientId, employeeId, gpsFile, locations, date) {
         this.id = id;
         this.clientId = clientId;
         this.employeeId = employeeId;
@@ -9,7 +9,7 @@ var ClientPassword = /** @class */ (function () {
         this.locations = locations;
         this.date = date;
     }
-    return ClientPassword;
+    return GpsInfo;
 }());
-exports.ClientPassword = ClientPassword;
+exports.GpsInfo = GpsInfo;
 //# sourceMappingURL=gpsInfo.model.js.map

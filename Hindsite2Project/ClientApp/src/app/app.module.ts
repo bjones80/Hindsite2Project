@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -31,6 +33,13 @@ import { CalendarComponent } from './yep/calendar/calendar.component';
 import { YepDefinitionComponent } from './yep/yep-definition/yep-definition.component';
 import { ClientsTableComponent } from './clients/clients-table/clients-table.component';
 import { ClientsLoginComponent } from './clients/clients-login/clients-login.component';
+import { ClientItemComponent } from './clients/clients-table/client-item/client-item.component';
+import { GpsComponent } from './gps/gps.component';
+import { GpsListComponent } from './gps/gps-list/gps-list.component';
+import { GpsItemComponent } from './gps/gps-list/gps-item/gps-item.component';
+import { GpsEditComponent } from './gps/gps-edit/gps-edit.component';
+import { GpsDetailComponent } from './gps/gps-detail/gps-detail.component';
+import { GpsFilterPipe } from './gps/gps-filter.pipe'
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,11 +70,21 @@ import { ClientsLoginComponent } from './clients/clients-login/clients-login.com
     CalendarComponent,
     YepDefinitionComponent,
     ClientsTableComponent,
-    ClientsLoginComponent
+    ClientsLoginComponent,
+    ClientItemComponent,
+    GpsComponent,
+    GpsDetailComponent,
+    GpsEditComponent,
+    GpsListComponent,
+    GpsItemComponent,
+    GpsFilterPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

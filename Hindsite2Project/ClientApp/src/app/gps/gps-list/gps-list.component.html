@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-12">
-    <h2>{{ client?.companyName }}</h2>
+    <h2>{{ gpsInfo.client?.companyName }}</h2>
     <div class="col-md-5 LocationSearch">
       <h4>
         Location Search:
@@ -15,11 +15,20 @@
                placeholder="Enter a search value">
       </h4>
     </div>
-    <div class="table">
-      <app-client-item
-                       *ngFor="let client of clients | clientsFilter:term"
-                       [client]="client" >
-      </app-client-item>
+    <div class="tableStuff">
+      <table>
+        <tr>
+          <th>Location</th>
+          <th>Company</th>
+          <th>Date</th>
+          <th>GPS Files</th>
+          <th>EDIT</th>
+        </tr>
+        <app-gps-item
+          *ngFor="let gpsInfo of gpsInfos | gpsFilter:term"
+          [gpsInfo]="gpsInfo">
+        </app-gps-item>
+      </table>
     </div>
     <div class="add">
       <button class="btn" routerLink='add'>Add</button>

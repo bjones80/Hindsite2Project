@@ -27,18 +27,24 @@
 
   <ItemGroup>
     <None Remove="ClientApp\src\app\clients\client.model.ts" />
+    <None Remove="ClientApp\src\app\clients\client.service.ts" />
     <None Remove="ClientApp\src\app\clients\clientPassword.model.ts" />
     <None Remove="ClientApp\src\app\clients\employee.model.ts" />
     <None Remove="ClientApp\src\app\clients\employeePassword.model.ts" />
     <None Remove="ClientApp\src\app\clients\gpsInfo.model.ts" />
+    <None Remove="ClientApp\src\app\gps\gps-filter.pipe.ts" />
+    <None Remove="ClientApp\src\app\gps\gps.service.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\clients\client.model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\clients\client.service.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\clients\clientPassword.model.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\clients\employee.model.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\clients\employeePassword.model.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\clients\gpsInfo.model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\gps\gps-filter.pipe.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\gps\gps.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\gps\gpsInfo.model.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

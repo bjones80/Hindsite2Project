@@ -1,4 +1,4 @@
-export class ClientPassword {
+export class GpsInfo {
   constructor(
     public id: number,
     public clientId: number,

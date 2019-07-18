@@ -1,0 +1,21 @@
+<a style="cursor: pointer;" [routerLink]="client?.id" routerLinkActive="active" class="list-group-item clearfix clientDiv"></a>
+<div class="row">
+  <div class="tableStuff">
+    <table>
+      <tr>
+        <th>Location</th>
+        <th>Company</th>
+        <th>Date</th>
+        <th>GPS Files</th>
+        <th>EDIT</th>
+      </tr>
+    <tr>
+      <td>{{ gpsInfo?.location }}</td>
+      <td>{{ gpsInfo.client?.companyName }}</td>
+      <td>{{ gpsInfo?.date }}</td>
+      <td>{{ gpsInfo?.gpsFile }}</td>
+      <td>Update - Delete</td>
+    </tr>
+    </table>
+  </div>
+</div>

@@ -1,13 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var ClientPassword = /** @class */ (function () {
-    function ClientPassword(id, employeeId, employeeUserName, employeePasswords) {
+var EmployeePassword = /** @class */ (function () {
+    function EmployeePassword(id, employeeId, employeeUserName, employeePasswords) {
         this.id = id;
         this.employeeId = employeeId;
         this.employeeUserName = employeeUserName;
         this.employeePasswords = employeePasswords;
     }
-    return ClientPassword;
+    return EmployeePassword;
 }());
-exports.ClientPassword = ClientPassword;
+exports.EmployeePassword = EmployeePassword;
 //# sourceMappingURL=employeePassword.model.js.map

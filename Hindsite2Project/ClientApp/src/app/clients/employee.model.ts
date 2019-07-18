@@ -1,4 +1,4 @@
-export class ClientPassword {
+export class Employee{
   constructor(
     public employeeId: number,
     public firstName: string,
