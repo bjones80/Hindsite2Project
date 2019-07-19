@@ -29,11 +29,11 @@ export class GpsListComponent implements OnInit, OnDestroy {
   }
 
   onNewGpsInfo() {
-    this.router.navigate(['new'], { relativeTo: this.route });
+    this.router.navigate(['add'], { relativeTo: this.route });
   }
 
   onKeyPress(value: string) {
-    this.term = value;
+   this.term = value;
   }
 
   ngOnDestroy(): void {

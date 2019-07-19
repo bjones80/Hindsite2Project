@@ -31,7 +31,7 @@ const appRoutes: Routes = [
         {path: 'monitoring', component: MonitoringComponent}
     ]}, 
   {path: 'clients', component: ClientsComponent, children: [
-      { path: 'new', component: GpsEditComponent },
+      { path: 'add', component: GpsEditComponent },
       { path: ':id/edit', component: GpsEditComponent}
     ]},
     { path: 'yep', component: YepComponent},

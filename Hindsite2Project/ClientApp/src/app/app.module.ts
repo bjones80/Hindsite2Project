@@ -31,15 +31,12 @@ import { HomeQuoteComponent } from './home/home-quote/home-quote.component';
 import { PaytimeComponent } from './yep/paytime/paytime.component';
 import { CalendarComponent } from './yep/calendar/calendar.component';
 import { YepDefinitionComponent } from './yep/yep-definition/yep-definition.component';
-import { ClientsTableComponent } from './clients/clients-table/clients-table.component';
 import { ClientsLoginComponent } from './clients/clients-login/clients-login.component';
-import { ClientItemComponent } from './clients/clients-table/client-item/client-item.component';
 import { GpsComponent } from './gps/gps.component';
 import { GpsListComponent } from './gps/gps-list/gps-list.component';
 import { GpsItemComponent } from './gps/gps-list/gps-item/gps-item.component';
 import { GpsEditComponent } from './gps/gps-edit/gps-edit.component';
-import { GpsDetailComponent } from './gps/gps-detail/gps-detail.component';
-import { GpsFilterPipe } from './gps/gps-filter.pipe'
+import { GpsFilterPipe } from './gps/gps-filter.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,11 +66,8 @@ import { GpsFilterPipe } from './gps/gps-filter.pipe'
     PaytimeComponent,
     CalendarComponent,
     YepDefinitionComponent,
-    ClientsTableComponent,
     ClientsLoginComponent,
-    ClientItemComponent,
     GpsComponent,
-    GpsDetailComponent,
     GpsEditComponent,
     GpsListComponent,
     GpsItemComponent,

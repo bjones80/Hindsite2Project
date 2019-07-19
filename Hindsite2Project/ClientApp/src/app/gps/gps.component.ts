@@ -6,10 +6,6 @@ import { Component, OnInit, Injectable } from '@angular/core';
   styleUrls: ['./gps.component.css']
 })
 
-@Injectable({
-  providedIn: 'root',
-})
-
 export class GpsComponent implements OnInit {
 
   constructor() { }

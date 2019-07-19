@@ -1,9 +1,11 @@
 import { Subject } from "rxjs";
 import { GpsInfo } from "./gpsInfo.model";
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Injectable, Inject } from '@angular/core';
 
-
-
+@Injectable({
+  providedIn: 'root'
+})
 export class GpsService {
   gpsInfoChangedEvent = new Subject<GpsInfo[]>();
   gpsInfos: GpsInfo[] = [];
@@ -13,21 +15,22 @@ export class GpsService {
   gpsInfosListClone: GpsInfo[] = [];
   id: string;
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient,
+    @Inject('BASE_URL') private baseUrl: string) {
     this.maxId = this.getMaxId();
   }
 
   storeGpsInfos(gpsInfos: GpsInfo[]) {
     let json = JSON.stringify(gpsInfos);
     let header = new HttpHeaders({ 'Content-Type': 'application/json' });
-    this.http.put('http://localhost:3000/api/gpsInfo', json, { headers: header })
+    this.http.put('http://localhost:5001/api/gpsInfo', json, { headers: header })
       .subscribe((response: Response) => {
         this.gpsInfoChangedEvent.next(gpsInfos.slice());
       })
   }
 
   getGpsInfos() {
-    this.http.get<{ message: string, gpsInfos: GpsInfo[] }>('http://localhost:3000/api/gpsInfo')
+    this.http.get<{ message: string, gpsInfos: GpsInfo[] }>('http://localhost:5001/api/gpsInfo')
       .subscribe(
         (responseData) => {
           this.gpsInfos = responseData.gpsInfos;
