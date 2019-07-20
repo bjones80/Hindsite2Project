@@ -1,10 +1,19 @@
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+.flex{
+  display: flex;
+}
+/* div {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-family: 'Spectral', serif;
+  background-color: #dddddd;
+}  */
+div {
+  /* text-align: center; */
+    /* padding-left: 100%; */
     font-family: 'Spectral', serif;
-  }
-    
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
+    border-collapse: collapse;
+    /* width: 100%; */
+    width: 90%;
+    font-size: 15px;
+}

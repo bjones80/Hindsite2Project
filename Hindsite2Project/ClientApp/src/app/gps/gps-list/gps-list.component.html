@@ -1,11 +1,12 @@
 <div class="row">
   <div class="col-md-12">
+    <h2>Jonah Energy</h2>
     <!-- <h2> {{gpsInfo.client.companyName}} </h2> -->
     <div class="col-md-5 LocationSearch">
       <h4>
         Location Search:
         <input type="text" #searchBox (keyup)="onKeyPress(searchBox.value)" class="form-Control"
-               placeholder="Enter a search value">
+          placeholder="Enter a search value">
       </h4>
     </div>
     <!--<div class="col-md-5 DateSearch">
@@ -16,17 +17,17 @@
       </h4>
     </div>-->
     <div class="tableStuff">
-      <table>
-        <tr>
-          <th>Location</th>
-          <th>Company</th>
-          <th>Date</th>
-          <th>GPS Files</th>
-          <th>EDIT</th>
-        </tr>
+      <div class="flex">
+        <div class="table">Location</div>
+        <div class="table">Company</div>
+        <div class="table">Date</div>
+        <div class="table">GPS Files</div>
+        <div class="table">EDIT</div>
+      </div>
+      <div>
         <app-gps-item *ngFor="let gpsInfo of gpsInfos | gpsFilter:term" [gpsInfo]="gpsInfo">
         </app-gps-item>
-      </table>
+      </div>
     </div>
     <div class="add">
       <a class="btn" [routerLink]="['add']">Add</a>

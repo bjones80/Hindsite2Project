@@ -11,24 +11,24 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 export class GpsItemComponent implements OnInit {
 
   @Input() gpsInfo: GpsInfo;
-  id: number;
+  // id: number;
 
   constructor(private gpsService: GpsService,
     private route: ActivatedRoute,
     private router: Router) { }
 
   ngOnInit() {
-    this.route.params
-      .subscribe(
-        (params: Params) => {
-          this.id = params['id'];
-          this.gpsInfo = this.gpsService.getGpsInfo(this.id);
-        })
+    // this.route.params
+    //   .subscribe(
+    //     (params: Params) => {
+    //       this.id = params['id'];
+    //       this.gpsInfo = this.gpsService.getGpsInfo(this.id);
+    //     })
   }
 
   onDelete() {
     this.gpsService.deleteGpsInfo(this.gpsInfo);
-    this.router.navigate(['/gps']);
+    this.router.navigate(['/gpsInfo']);
   }
 
 }

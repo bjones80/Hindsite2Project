@@ -25,7 +25,10 @@ namespace Hindsite2Project.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<GpsInfo>>> GetGpsInfo()
         {
-            return await _context.GpsInfo.ToListAsync();
+            return await _context.GpsInfo
+                .Include(c => c.Client)
+                .Include(e => e.Employee)
+                .ToListAsync();
         }
 
         // GET: api/GpsInfoes/5

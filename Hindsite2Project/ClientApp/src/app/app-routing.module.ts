@@ -14,6 +14,7 @@ import { ReclamationComponent } from './services/reclamation/reclamation.compone
 import { WeedControlComponent } from './services/weed-control/weed-control.component';
 import { MonitoringComponent } from './services/monitoring/monitoring.component';
 import { GpsEditComponent } from './gps/gps-edit/gps-edit.component';
+import { GpsComponent } from './gps/gps.component';
 
 const appRoutes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -30,9 +31,10 @@ const appRoutes: Routes = [
         {path: 'weedControl', component: WeedControlComponent},
         {path: 'monitoring', component: MonitoringComponent}
     ]}, 
-  {path: 'clients', component: ClientsComponent, children: [
-      { path: 'add', component: GpsEditComponent },
-      { path: ':id/edit', component: GpsEditComponent}
+    {path: 'clients', component: ClientsComponent},
+    {path: 'gpsInfo', component: GpsComponent, children: [
+        {path: 'add', component: GpsEditComponent },
+        {path: ':id/edit', component: GpsEditComponent }
     ]},
     { path: 'yep', component: YepComponent},
     { path: 'contact', component: ContactComponent}

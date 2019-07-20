@@ -22,28 +22,34 @@ h2{
     padding-left: 30px;
   }
   
-  table {
+  .flex {
     text-align: center;
     /* padding-left: 100%; */
     font-family: 'Spectral', serif;
     border-collapse: collapse;
     /* width: 100%; */
     width: 90%;
+    font-size: 15px;
     /* padding-left: 30px; */
     /* display: inline-block; */
+    display: flex;
   }
-  
-  td, th {
+/*   
+  .headLocation{
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
     font-family: 'Spectral', serif;
-  }
+  } */
     
-  tr:nth-child(even) {
+  /* tr:nth-child(even) {
     background-color: #dddddd;
-  }
+  } */
   
-  .add{
+  /* .add{
     padding: 3%;
-  }
+  } */
+
+  /* .flex {
+    display: flex;
+  } */

@@ -23,17 +23,17 @@ export class GpsService {
   storeGpsInfos(gpsInfos: GpsInfo[]) {
     let json = JSON.stringify(gpsInfos);
     let header = new HttpHeaders({ 'Content-Type': 'application/json' });
-    this.http.put('http://localhost:5001/api/gpsInfo', json, { headers: header })
+    this.http.put(this.baseUrl + 'api/GpsInfoes', json, { headers: header })
       .subscribe((response: Response) => {
         this.gpsInfoChangedEvent.next(gpsInfos.slice());
       })
   }
 
   getGpsInfos() {
-    this.http.get<{ message: string, gpsInfos: GpsInfo[] }>('http://localhost:5001/api/gpsInfo')
+    this.http.get<GpsInfo[]>(this.baseUrl + 'api/GpsInfoes')
       .subscribe(
-        (responseData) => {
-          this.gpsInfos = responseData.gpsInfos;
+        (gpsInfos) => {
+          this.gpsInfos = gpsInfos;
           this.gpsInfos.sort((a, b) => a.locations > b.locations ? 1 : b.locations > a.locations ? -1 : 0);
           this.gpsInfoChangedEvent.next(this.gpsInfos.slice());
         }
@@ -61,10 +61,10 @@ export class GpsService {
     gpsInfo.id = 0;
     const strGpsInfo = JSON.stringify(gpsInfo);
 
-    this.http.post('http://localhost:3000/api/gpsInfo', strGpsInfo, { headers: headers })
+    this.http.post(this.baseUrl + 'api/GpsInfoes', strGpsInfo, { headers: headers })
       .subscribe(
-        (gpsInfos: GpsInfo[]) => {
-          this.gpsInfos = gpsInfos;
+        (gpsInfo: GpsInfo) => {
+          this.gpsInfos.push(gpsInfo);
           this.gpsInfoChangedEvent.next(this.gpsInfos.slice());
         }
       )
@@ -92,7 +92,8 @@ export class GpsService {
       'Content-Type': 'application/json'
     });
 
-    this.http.put('http://localhost:3000/api/gpsInfo' + originalGpsInfo.id
+    newGpsInfo.id = originalGpsInfo.id;
+    this.http.put(this.baseUrl + 'api/GpsInfoes/' + originalGpsInfo.id
       , newGpsInfo, { headers: headers })
       .subscribe(
         (response: Response) => {
@@ -106,7 +107,7 @@ export class GpsService {
     if (!gpsInfo) {
       return;
     }
-    this.http.delete('http://localhost:3000/api/gpsInfo' + gpsInfo.id)
+    this.http.delete(this.baseUrl + 'api/GpsInfoes/' + gpsInfo.id)
       .subscribe(
         (gpsInfos: GpsInfo[]) => {
           this.gpsInfos = gpsInfos;

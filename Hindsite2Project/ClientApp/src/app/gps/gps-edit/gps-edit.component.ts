@@ -24,7 +24,7 @@ export class GpsEditComponent implements OnInit {
     this.route.params
       .subscribe(
         (params: Params) => {
-          this.id = params['id'];
+          this.id = +params['id'];
           if (!this.id) {
             this.editMode = false;
             return;
@@ -42,17 +42,17 @@ export class GpsEditComponent implements OnInit {
 
   onSubmit(form: NgForm) {
     let value = form.value;
-    let newGpsInfo = new GpsInfo(0, value.location, value.client.clientId, value.employee.employeeId, value.date, value.gpsFile);
+    let newGpsInfo = new GpsInfo(0, 2, 1,  value.gpsFile, value.location, value.date);
     if (this.editMode === true) {
       this.gpsService.updateGpsInfo(this.originalGpsInfo, newGpsInfo);
     } else {
       this.gpsService.addGpsInfo(newGpsInfo);
     }
-    this.router.navigate(['/gps']);
+    this.router.navigate(['/gpsInfo']);
   }
 
   onCancel() {
-    this.router.navigate(['/gps']);
+    this.router.navigate(['/gpsInfo']);
   }
 
   isInvalidGpsInfo(newGpsInfo: GpsInfo) {
