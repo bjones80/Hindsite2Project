@@ -1,13 +1,13 @@
-div{
-    background-color: #ffffff;
+div {
+  background-color: #d3d3d3;
 }
-h2{
-    background-color: #1BB4E8;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;
-    font-size: 30px;
-    color: #ffffff;
-    font-style: bold;
+h2 {
+  background-color: #1bb4e8;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  font-size: 30px;
+  color: #ffffff;
+  font-style: bold;
 }

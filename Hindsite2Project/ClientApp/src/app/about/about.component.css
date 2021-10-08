@@ -1,13 +1,18 @@
-div{
-    background-color: #ffffff;
+div {
+  background-color: #d3d3d3;
 }
-h2{
-    background-color: #C6B07F;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;
-    font-size: 30px;
-    color: #ffffff;
-    font-style: bold;
+h2 {
+  background-color: #c6b07f;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  font-size: 30px;
+  color: #ffffff;
+  font-style: bold;
+  box-shadow: 3px 5px #8f7f5b;
+}
+h2:hover {
+  background-color: #8f7f5b;
+  box-shadow: 3px 5px #c6b07f;
 }
