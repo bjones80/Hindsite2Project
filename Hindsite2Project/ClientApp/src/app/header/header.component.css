@@ -1,18 +1,27 @@
 nav {
-    background-color: #000;
-    height: 100px;
-    padding: 25px;
-    
+  background-color: #000;
+  height: 100px;
+  padding: 25px;
+
 }
+
 a {
-    font-size: 20px;
-    text-align: center;
+  font-size: 20px;
+  text-align: center;
 }
-ul{
-    font-family: 'Varela Round', sans-serif;
-    font: bold;
-    color: #ffff;
+
+ul {
+  font-family: 'Varela Round', sans-serif;
+  font: bold;
+  color: #ffff;
 }
+.navbar-brand {
+    color: #1BB4E8;
+    font-size: 40px;
+    font-family: 'Acme', sans-serif;
+  
+  }
+
 /* li{
     font-family: 'Varela Round', sans-serif;
     font: bold;
@@ -24,14 +33,16 @@ ul{
     color: #ffff;
 } */
 img {
-    
-    
-    padding-right: 30px;
-    height: 60px;
+    position: relative;
+    animation: mymove 30s infinite;
+    height: 70px;
+    animation-timing-function: linear;
 }
-.navbar-brand {
-    color: #1BB4E8;
-    font-size: 40px;
-    font-family: 'Acme', sans-serif;
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 475%;}
+  }
+  
 
-}
+
+
