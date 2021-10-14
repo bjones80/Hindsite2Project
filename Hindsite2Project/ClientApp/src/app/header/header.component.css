@@ -2,36 +2,25 @@ nav {
   background-color: #000;
   height: 100px;
   padding: 25px;
+  text-align: center;
 
+}
+div{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   font-size: 20px;
-  text-align: center;
+  font-family: 'Varela Round', sans-serif;
 }
 
-ul {
-  font-family: 'Varela Round', sans-serif;
-  font: bold;
-  color: #ffff;
-}
 .navbar-brand {
     color: #1BB4E8;
     font-size: 40px;
     font-family: 'Acme', sans-serif;
-  
   }
-
-/* li{
-    font-family: 'Varela Round', sans-serif;
-    font: bold;
-    color: pink;
-} */
-/* .navbar-nav {
-    font-family: 'Varela Round', sans-serif;
-    font: bold;
-    color: #ffff;
-} */
 img {
     position: relative;
     animation: mymove 30s infinite;
