@@ -3,7 +3,7 @@ import { Routes, RouterModule} from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { ClientsComponent } from './clients/clients.component';
-import { YepComponent } from './yep/yep.component';
+import { EmployeeComponent } from './employee/employee.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { AboutBossComponent } from './about/about-boss/about-boss.component';
@@ -36,7 +36,7 @@ const appRoutes: Routes = [
         {path: 'add', component: GpsEditComponent },
         {path: ':id/edit', component: GpsEditComponent }
     ]},
-    { path: 'yep', component: YepComponent},
+    { path: 'employee', component: EmployeeComponent},
     { path: 'contact', component: ContactComponent}
 
 ];

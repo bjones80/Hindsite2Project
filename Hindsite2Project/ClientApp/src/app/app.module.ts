@@ -9,7 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { ClientsComponent } from './clients/clients.component';
-import { YepComponent } from './yep/yep.component';
+import { EmployeeComponent } from './employee/employee.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeGalleryComponent } from './home/home-gallery/home-gallery.component';
 import { HomeLandComponent } from './home/home-land/home-land.component';
@@ -28,9 +28,9 @@ import { ContactDetailComponent } from './contact/contact-detail/contact-detail.
 import { ContactMessageComponent } from './contact/contact-message/contact-message.component';
 import { ContactLocatedComponent } from './contact/contact-located/contact-located.component';
 import { HomeQuoteComponent } from './home/home-quote/home-quote.component';
-import { PaytimeComponent } from './yep/paytime/paytime.component';
-import { CalendarComponent } from './yep/calendar/calendar.component';
-import { YepDefinitionComponent } from './yep/yep-definition/yep-definition.component';
+import { PaytimeComponent } from './employee/paytime/paytime.component';
+import { CalendarComponent } from './employee/calendar/calendar.component';
+import { EmployeeDefinitionComponent } from './employee/employee-definition/employee-definition.component';
 import { ClientsLoginComponent } from './clients/clients-login/clients-login.component';
 import { GpsComponent } from './gps/gps.component';
 import { GpsListComponent } from './gps/gps-list/gps-list.component';
@@ -45,7 +45,7 @@ import { GpsFilterPipe } from './gps/gps-filter.pipe';
     AboutComponent,
     ServicesComponent,
     ClientsComponent,
-    YepComponent,
+    EmployeeComponent,
     ContactComponent,
     HomeGalleryComponent,
     HomeLandComponent,
@@ -65,7 +65,7 @@ import { GpsFilterPipe } from './gps/gps-filter.pipe';
     HomeQuoteComponent,
     PaytimeComponent,
     CalendarComponent,
-    YepDefinitionComponent,
+    EmployeeDefinitionComponent,
     ClientsLoginComponent,
     GpsComponent,
     GpsEditComponent,
