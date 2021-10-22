@@ -10,8 +10,11 @@ import { AboutBossComponent } from './about/about-boss/about-boss.component';
 import { AboutHindsiteComponent } from './about/about-hindsite/about-hindsite.component';
 import { AboutTimeLineComponent } from './about/about-time-line/about-time-line.component';
 import { AboutBossGalleryComponent } from './about/about-boss-gallery/about-boss-gallery.component';
-import { ReclamationComponent } from './services/reclamation/reclamation.component';
+import { SeedingComponent } from './services/seeding/seeding.component';
 import { WeedControlComponent } from './services/weed-control/weed-control.component';
+import { YepComponent } from './services/yep/yep.component';
+import { ErosinComponent } from './services/erosin/erosin.component';
+import { IrrigationComponent } from './services/irrigation/irrigation.component';
 import { MonitoringComponent } from './services/monitoring/monitoring.component';
 import { GpsEditComponent } from './gps/gps-edit/gps-edit.component';
 import { GpsComponent } from './gps/gps.component';
@@ -27,12 +30,15 @@ const appRoutes: Routes = [
         {path: 'gallery', component: AboutBossGalleryComponent}
     ]},
     { path: 'services', component: ServicesComponent, children: [
-        {path: 'reclamation', component: ReclamationComponent},
+        {path: 'seeding', component: SeedingComponent},
         {path: 'weedControl', component: WeedControlComponent},
-        {path: 'monitoring', component: MonitoringComponent}
+        {path: 'monitoring', component: MonitoringComponent},
+        {path: 'yep', component: YepComponent},
+        {path: 'irrigation', component: IrrigationComponent},
+        {path: 'erosin', component: ErosinComponent}
     ]}, 
     {path: 'clients', component: ClientsComponent},
-    {path: 'gpsInfo', component: GpsComponent, children: [
+    {path: 'gpsInfo', component: MonitoringComponent, children: [
         {path: 'add', component: GpsEditComponent },
         {path: ':id/edit', component: GpsEditComponent }
     ]},

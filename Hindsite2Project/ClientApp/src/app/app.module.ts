@@ -21,8 +21,11 @@ import { AboutBossComponent } from './about/about-boss/about-boss.component';
 import { AboutTimeLineComponent } from './about/about-time-line/about-time-line.component';
 import { AboutBossGalleryComponent } from './about/about-boss-gallery/about-boss-gallery.component';
 import { FooterComponent } from './footer/footer.component';
-import { ReclamationComponent } from './services/reclamation/reclamation.component';
+import { SeedingComponent } from './services/seeding/seeding.component';
 import { WeedControlComponent } from './services/weed-control/weed-control.component';
+import { YepComponent } from './services/yep/yep.component';
+import { ErosinComponent } from './services/erosin/erosin.component';
+import { IrrigationComponent } from './services/irrigation/irrigation.component';
 import { MonitoringComponent } from './services/monitoring/monitoring.component';
 import { ContactDetailComponent } from './contact/contact-detail/contact-detail.component';
 import { ContactMessageComponent } from './contact/contact-message/contact-message.component';
@@ -56,8 +59,11 @@ import { GpsFilterPipe } from './gps/gps-filter.pipe';
     AboutTimeLineComponent,
     AboutBossGalleryComponent,
     FooterComponent,
-    ReclamationComponent,
+    SeedingComponent,
     WeedControlComponent,
+    YepComponent,
+    ErosinComponent,
+    IrrigationComponent,
     MonitoringComponent,
     ContactDetailComponent,
     ContactMessageComponent,
@@ -67,7 +73,7 @@ import { GpsFilterPipe } from './gps/gps-filter.pipe';
     CalendarComponent,
     EmployeeDefinitionComponent,
     ClientsLoginComponent,
-    GpsComponent,
+    MonitoringComponent,
     GpsEditComponent,
     GpsListComponent,
     GpsItemComponent,
