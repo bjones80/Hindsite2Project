@@ -7,7 +7,6 @@ import { EmployeeComponent } from './employee/employee.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { AboutBossComponent } from './about/about-boss/about-boss.component';
-import { AboutHindsiteComponent } from './about/about-hindsite/about-hindsite.component';
 import { AboutTimeLineComponent } from './about/about-time-line/about-time-line.component';
 import { AboutBossGalleryComponent } from './about/about-boss-gallery/about-boss-gallery.component';
 import { SeedingComponent } from './services/seeding/seeding.component';
@@ -22,10 +21,9 @@ import { GpsComponent } from './gps/gps.component';
 const appRoutes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent},
-    { path: 'about', redirectTo : '/about/hindsite', pathMatch: 'full'},
+    { path: 'about', redirectTo : '/about/ourStory', pathMatch: 'full'},
     { path: 'about', component: AboutComponent, children: [
         {path: 'ourStory', component: AboutBossComponent},
-        {path: 'hindsite', component: AboutHindsiteComponent},
         {path: 'timeline', component: AboutTimeLineComponent},
         {path: 'gallery', component: AboutBossGalleryComponent}
     ]},
@@ -38,7 +36,7 @@ const appRoutes: Routes = [
         {path: 'erosin', component: ErosinComponent}
     ]}, 
     {path: 'clients', component: ClientsComponent},
-    {path: 'gpsInfo', component: MonitoringComponent, children: [
+    {path: 'gpsInfo', component: GpsComponent, children: [
         {path: 'add', component: GpsEditComponent },
         {path: ':id/edit', component: GpsEditComponent }
     ]},

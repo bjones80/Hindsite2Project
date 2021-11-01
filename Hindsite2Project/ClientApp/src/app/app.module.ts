@@ -13,10 +13,8 @@ import { EmployeeComponent } from './employee/employee.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeGalleryComponent } from './home/home-gallery/home-gallery.component';
 import { HomeLandComponent } from './home/home-land/home-land.component';
-import { HomeWeedControlComponent } from './home/home-weed-control/home-weed-control.component';
+import { HomeReclamationGalleryComponent } from './home/home-reclamation-gallery/home-reclamation-gallery.component';
 import { AppRoutingModule } from './app-routing.module';
-import { AboutHindsiteComponent } from './about/about-hindsite/about-hindsite.component';
-import { AboutGalleryComponent } from './about/about-gallery/about-gallery.component';
 import { AboutBossComponent } from './about/about-boss/about-boss.component';
 import { AboutTimeLineComponent } from './about/about-time-line/about-time-line.component';
 import { AboutBossGalleryComponent } from './about/about-boss-gallery/about-boss-gallery.component';
@@ -30,7 +28,6 @@ import { MonitoringComponent } from './services/monitoring/monitoring.component'
 import { ContactDetailComponent } from './contact/contact-detail/contact-detail.component';
 import { ContactMessageComponent } from './contact/contact-message/contact-message.component';
 import { ContactLocatedComponent } from './contact/contact-located/contact-located.component';
-import { HomeQuoteComponent } from './home/home-quote/home-quote.component';
 import { PaytimeComponent } from './employee/paytime/paytime.component';
 import { CalendarComponent } from './employee/calendar/calendar.component';
 import { EmployeeDefinitionComponent } from './employee/employee-definition/employee-definition.component';
@@ -52,9 +49,7 @@ import { GpsFilterPipe } from './gps/gps-filter.pipe';
     ContactComponent,
     HomeGalleryComponent,
     HomeLandComponent,
-    HomeWeedControlComponent,
-    AboutHindsiteComponent,
-    AboutGalleryComponent,
+    HomeReclamationGalleryComponent,
     AboutBossComponent,
     AboutTimeLineComponent,
     AboutBossGalleryComponent,
@@ -68,12 +63,12 @@ import { GpsFilterPipe } from './gps/gps-filter.pipe';
     ContactDetailComponent,
     ContactMessageComponent,
     ContactLocatedComponent,
-    HomeQuoteComponent,
     PaytimeComponent,
     CalendarComponent,
     EmployeeDefinitionComponent,
     ClientsLoginComponent,
     MonitoringComponent,
+    GpsComponent,
     GpsEditComponent,
     GpsListComponent,
     GpsItemComponent,
